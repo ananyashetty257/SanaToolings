@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Sana Toolings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --dark: #000000;
+            --grey: #333333;
+            --light-grey: #666666;
+            --white: #ffffff;
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--white);
+        }
+
+        .navbar {
+            background-color: var(--dark) !important;
+        }
+
+        .navbar-light .navbar-nav .nav-link,
+        .navbar-light .navbar-brand {
+            color: var(--white) !important;
+        }
+
+        .navbar-toggler {
+            background-color: var(--white);
+        }
+
+        .card {
+            background-color: var(--grey);
+            border: 1px solid var(--light-grey);
+            color: var(--white);
+        }
+
+        .bg-light {
+            background-color: var(--grey) !important;
+        }
+
+        .bg-dark {
+            background-color: var(--dark) !important;
+        }
+
+        .btn-primary {
+            background-color: var(--light-grey);
+            border-color: var(--light-grey);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--grey);
+            border-color: var(--grey);
+        }
+
+        .btn-outline-secondary {
+            color: var(--white);
+            border-color: var(--light-grey);
+        }
+
+        .form-control, .form-select {
+            background-color: var(--grey);
+            border-color: var(--light-grey);
+            color: var(--white);
+        }
+
+        .form-control:focus {
+            background-color: var(--grey);
+            border-color: var(--light-grey);
+            color: var(--white);
+            box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+        }
+
+        .modal-content {
+            background-color: var(--grey);
+            color: var(--white);
+        }
+
+        .modal-header {
+            background-color: var(--dark);
+            border-bottom: 1px solid var(--light-grey);
+        }
+
+        .badge {
+            background-color: var(--light-grey) !important;
+            color: var(--white) !important;
+        }
+
+        .text-muted {
+            color: #cccccc !important;
+        }
+
+        .alert-info {
+            background-color: var(--grey);
+            border-color: var(--light-grey);
+            color: var(--white);
+        }
+
+        .rounded-circle.bg-primary {
+            background-color: var(--light-grey) !important;
+        }
+
+        ::placeholder {
+            color: #999999 !important;
+        }
+    </style>
+    
+    <!-- Added meta description for SEO -->
+    <meta name="description" content="Join the Sana Toolings team. Explore career opportunities in engineering, production, and more.">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/lg.png" alt="Sana Toolings Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="careers.html">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 pt-5">
+        <h1 class="text-center mb-5">Career Opportunities</h1>
+        
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="career-listings">
+                    <!-- Job listings -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Tool Designer</h5>
+                            <p class="card-text">
+                                <strong>Experience:</strong> 3-5 years<br>
+                                <strong>Location:</strong> On-site<br>
+                                <strong>Department:</strong> Engineering
+                            </p>
+                            <p>We're looking for an experienced Tool Designer to join our engineering team...</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applyModal">Apply Now</button>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">CNC Operator</h5>
+                            <p class="card-text">
+                                <strong>Experience:</strong> 2-4 years<br>
+                                <strong>Location:</strong> On-site<br>
+                                <strong>Department:</strong> Production
+                            </p>
+                            <p>Seeking skilled CNC operators for our manufacturing facility...</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applyModal">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero section for careers page -->
+    <div class="container-fluid bg-light py-5 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Join Our Team</h1>
+                    <p class="lead">At Sana Toolings, we're looking for talented individuals who are passionate about innovation and excellence in manufacturing.</p>
+                    <a href="#open-positions" class="btn btn-primary btn-lg">View Open Positions</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/team.PNG" alt="Team at Sana Toolings" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why join us section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-5">Why Join Sana Toolings?</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <i class="bi bi-graph-up-arrow fs-1 text-primary"></i>
+                        </div>
+                        <h5 class="card-title">Growth Opportunities</h5>
+                        <p class="card-text">We invest in our employees' professional development with training programs and advancement paths.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <i class="bi bi-people fs-1 text-primary"></i>
+                        </div>
+                        <h5 class="card-title">Collaborative Culture</h5>
+                        <p class="card-text">Work with talented professionals in a supportive environment that values teamwork and innovation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <i class="bi bi-heart-pulse fs-1 text-primary"></i>
+                        </div>
+                        <h5 class="card-title">Comprehensive Benefits</h5>
+                        <p class="card-text">Enjoy competitive compensation, health insurance, retirement plans, and work-life balance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5" id="open-positions">
+        <h2 class="text-center mb-5">Open Positions</h2>
+        
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <!-- Job filter options -->
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                        <div class="mb-3 mb-md-0">
+                            <select class="form-select" id="departmentFilter">
+                                <option value="all">All Departments</option>
+                                <option value="engineering">Engineering</option>
+                                <option value="production">Production</option>
+                                <option value="quality">Quality Control</option>
+                            </select>
+                        </div>
+                        <div class="d-flex">
+                            <input type="text" class="form-control me-2" id="searchJobs" placeholder="Search positions...">
+                            <button class="btn btn-outline-primary" id="searchButton">Search</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="career-listings">
+                    <!-- Job listings with improved design -->
+                    <div class="card mb-4 job-card" data-department="engineering">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <span class="badge bg-primary mb-2">Engineering</span>
+                                    <h5 class="card-title">Tool Designer</h5>
+                                </div>
+                                <span class="badge bg-success">New</span>
+                            </div>
+                            <p class="card-text">
+                                <strong>Experience:</strong> 3-5 years<br>
+                                <strong>Location:</strong> On-site<br>
+                                <strong>Department:</strong> Engineering
+                            </p>
+                            <p>We're looking for an experienced Tool Designer to join our engineering team. You'll be responsible for designing precision tools and fixtures for manufacturing processes.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applyModal" data-job-title="Tool Designer">Apply Now</button>
+                                <button class="btn btn-outline-secondary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#toolDesignerDetails">
+                                    View Details
+                                </button>
+                            </div>
+                            <div class="collapse mt-3" id="toolDesignerDetails">
+                                <div class="card card-body bg-light">
+                                    <h6>Responsibilities:</h6>
+                                    <ul>
+                                        <li>Design tools, dies, and fixtures for manufacturing processes</li>
+                                        <li>Create detailed technical drawings and specifications</li>
+                                        <li>Collaborate with production teams to optimize designs</li>
+                                        <li>Troubleshoot and resolve design issues</li>
+                                    </ul>
+                                    <h6>Requirements:</h6>
+                                    <ul>
+                                        <li>Bachelor's degree in Mechanical Engineering or related field</li>
+                                        <li>3-5 years experience in tool design</li>
+                                        <li>Proficiency in CAD software (SolidWorks preferred)</li>
+                                        <li>Knowledge of manufacturing processes and materials</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 job-card" data-department="production">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <span class="badge bg-info mb-2">Production</span>
+                                    <h5 class="card-title">CNC Operator</h5>
+                                </div>
+                            </div>
+                            <p class="card-text">
+                                <strong>Experience:</strong> 2-4 years<br>
+                                <strong>Location:</strong> On-site<br>
+                                <strong>Department:</strong> Production
+                            </p>
+                            <p>Seeking skilled CNC operators for our manufacturing facility. You'll be responsible for setting up, operating, and maintaining CNC machines to produce precision components.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applyModal" data-job-title="CNC Operator">Apply Now</button>
+                                <button class="btn btn-outline-secondary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#cncOperatorDetails">
+                                    View Details
+                                </button>
+                            </div>
+                            <div class="collapse mt-3" id="cncOperatorDetails">
+                                <div class="card card-body bg-light">
+                                    <h6>Responsibilities:</h6>
+                                    <ul>
+                                        <li>Set up and operate CNC machines</li>
+                                        <li>Monitor production processes and make adjustments as needed</li>
+                                        <li>Perform quality checks on finished components</li>
+                                        <li>Maintain equipment and work area</li>
+                                    </ul>
+                                    <h6>Requirements:</h6>
+                                    <ul>
+                                        <li>2-4 years experience operating CNC machines</li>
+                                        <li>Ability to read and interpret technical drawings</li>
+                                        <li>Knowledge of machining processes and tooling</li>
+                                        <li>Strong attention to detail and problem-solving skills</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-4 job-card" data-department="quality">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <span class="badge bg-warning text-dark mb-2">Quality Control</span>
+                                    <h5 class="card-title">Quality Assurance Specialist</h5>
+                                </div>
+                                <span class="badge bg-success">New</span>
+                            </div>
+                            <p class="card-text">
+                                <strong>Experience:</strong> 2+ years<br>
+                                <strong>Location:</strong> On-site<br>
+                                <strong>Department:</strong> Quality Control
+                            </p>
+                            <p>Join our quality team to ensure our products meet the highest standards. You'll be responsible for inspecting components and implementing quality control processes.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applyModal" data-job-title="Quality Assurance Specialist">Apply Now</button>
+                                <button class="btn btn-outline-secondary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#qaDetails">
+                                    View Details
+                                </button>
+                            </div>
+                            <div class="collapse mt-3" id="qaDetails">
+                                <div class="card card-body bg-light">
+                                    <h6>Responsibilities:</h6>
+                                    <ul>
+                                        <li>Inspect and test products at various stages of production</li>
+                                        <li>Document quality issues and recommend improvements</li>
+                                        <li>Maintain quality control records and reports</li>
+                                        <li>Collaborate with production teams to resolve quality issues</li>
+                                    </ul>
+                                    <h6>Requirements:</h6>
+                                    <ul>
+                                        <li>2+ years experience in quality control in manufacturing</li>
+                                        <li>Familiarity with quality standards (ISO 9001, etc.)</li>
+                                        <li>Experience with measurement tools and inspection equipment</li>
+                                        <li>Strong analytical and problem-solving skills</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- No results message -->
+                <div id="noResults" class="alert alert-info text-center d-none">
+                    No positions match your search criteria. Please try different keywords or filters.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Employee testimonials section -->
+    <div class="container-fluid bg-light py-5 my-5">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Team Says</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div>
+                                    <h5 class="mb-0">Sarah Johnson</h5>
+                                    <p class="text-muted mb-0">Senior Tool Designer</p>
+                                </div>
+                            </div>
+                            <p class="card-text">"Working at Sana Toolings has been incredibly rewarding. The collaborative environment and opportunities for growth have helped me advance my career while working on exciting projects."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div>
+                                    <h5 class="mb-0">Michael Chen</h5>
+                                    <p class="text-muted mb-0">CNC Team Lead</p>
+                                </div>
+                            </div>
+                            <p class="card-text">"I started as a CNC operator and was able to grow into a team lead position. The company invests in training and values employee input, which makes it a great place to build a career."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div>
+                                    <h5 class="mb-0">Priya Patel</h5>
+                                    <p class="text-muted mb-0">Quality Manager</p>
+                                </div>
+                            </div>
+                            <p class="card-text">"The commitment to quality at Sana Toolings aligns perfectly with my professional values. I'm proud to work with a team that prioritizes excellence in everything we do."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Application process section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-5">Our Application Process</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="card border-0 shadow-sm text-center h-100">
+                            <div class="card-body">
+                                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 60px; height: 60px;">
+                                    <h3 class="mb-0">1</h3>
+                                </div>
+                                <h5>Apply Online</h5>
+                                <p class="small">Submit your application through our careers portal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0 shadow-sm text-center h-100">
+                            <div class="card-body">
+                                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 60px; height: 60px;">
+                                    <h3 class="mb-0">2</h3>
+                                </div>
+                                <h5>Initial Review</h5>
+                                <p class="small">Our HR team reviews your qualifications</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0 shadow-sm text-center h-100">
+                            <div class="card-body">
+                                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 60px; height: 60px;">
+                                    <h3 class="mb-0">3</h3>
+                                </div>
+                                <h5>Interviews</h5>
+                                <p class="small">Meet with our team to discuss your experience</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0 shadow-sm text-center h-100">
+                            <div class="card-body">
+                                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 60px; height: 60px;">
+                                    <h3 class="mb-0">4</h3>
+                                </div>
+                                <h5>Welcome Aboard</h5>
+                                <p class="small">Join our team and start your journey with us</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Improved Application Modal -->
+    <div class="modal fade" id="applyModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Apply for <span id="modalJobTitle">Position</span></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="applicationForm" class="needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Full Name*</label>
+                                <input type="text" class="form-control" id="name" required>
+                                <div class="invalid-feedback">Please provide your full name</div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email Address*</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback">Please provide a valid email address</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Phone Number*</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                                <div class="invalid-feedback">Please provide your phone number</div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="linkedin" class="form-label">LinkedIn Profile (Optional)</label>
+                                <input type="url" class="form-control" id="linkedin">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="resume" class="form-label">Resume/CV* (PDF, DOC, DOCX)</label>
+                            <input type="file" class="form-control" id="resume" accept=".pdf,.doc,.docx" required>
+                            <div class="invalid-feedback">Please upload your resume</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="coverLetter" class="form-label">Cover Letter (Optional)</label>
+                            <textarea class="form-control" id="coverLetter" rows="4" placeholder="Tell us why you're interested in this position and what makes you a great fit..."></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">How did you hear about us?</label>
+                            <select class="form-select" id="referralSource">
+                                <option value="">Please select</option>
+                                <option value="job-board">Job Board</option>
+                                <option value="linkedin">LinkedIn</option>
+                                <option value="employee">Employee Referral</option>
+                                <option value="website">Company Website</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="privacyConsent" required>
+                            <label class="form-check-label" for="privacyConsent">I consent to Sana Toolings processing my personal data for recruitment purposes*</label>
+                            <div class="invalid-feedback">You must agree before submitting</div>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Submit Application</button>
+                        </div>
+                        <p class="small text-muted mt-2">* Required fields</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-5">
+        <!-- Same footer content as other pages -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Added Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <script>
+        // Form validation
+        document.getElementById('applicationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if (!this.checkValidity()) {
+                e.stopPropagation();
+                this.classList.add('was-validated');
+                return;
+            }
+            
+            // Form is valid, show success message
+            alert('Thank you for your application. We will review it and get back to you soon!');
+            this.reset();
+            this.classList.remove('was-validated');
+            
+            // Close modal
+            const modal = bootstrap.Modal.getInstance(document.getElementById('applyModal'));
+            modal.hide();
+        });
+        
+        // Update job title in modal
+        const applyModal = document.getElementById('applyModal');
+        applyModal.addEventListener('show.bs.modal', function(event) {
+            const button = event.relatedTarget;
+            const jobTitle = button.getAttribute('data-job-title');
+            const modalJobTitle = document.getElementById('modalJobTitle');
+            modalJobTitle.textContent = jobTitle || 'Position';
+        });
+        
+        // Job filtering functionality
+        document.getElementById('departmentFilter').addEventListener('change', filterJobs);
+        document.getElementById('searchButton').addEventListener('click', filterJobs);
+        document.getElementById('searchJobs').addEventListener('keyup', function(e) {
+            if (e.key === 'Enter') {
+                filterJobs();
+            }
+        });
+        
+        function filterJobs() {
+            const department = document.getElementById('departmentFilter').value;
+            const searchTerm = document.getElementById('searchJobs').value.toLowerCase();
+            const jobCards = document.querySelectorAll('.job-card');
+            let visibleCount = 0;
+            
+            jobCards.forEach(card => {
+                const cardDepartment = card.getAttribute('data-department');
+                const cardText = card.textContent.toLowerCase();
+                
+                const departmentMatch = department === 'all' || cardDepartment === department;
+                const searchMatch = searchTerm === '' || cardText.includes(searchTerm);
+                
+                if (departmentMatch && searchMatch) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            // Show/hide no results message
+            const noResults = document.getElementById('noResults');
+            if (visibleCount === 0) {
+                noResults.classList.remove('d-none');
+            } else {
+                noResults.classList.add('d-none');
+            }
+        }
+    </script>
+</body>
+</html>
